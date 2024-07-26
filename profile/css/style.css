@@ -1,0 +1,140 @@
+body,
+p,
+ul {
+  margin: initial;
+  padding: initial;
+}
+
+h1 {
+  margin: initial;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.header__mode {
+  font-weight: bold;
+  color: white;
+  padding: 5px 0 5px 5px;
+  text-align: left;
+}
+
+body {
+  background-color: black;
+  font-weight: bold;
+}
+
+.header__mode {
+  font-size: 16px;
+}
+
+.header__mode:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.wrapper {
+  border: 10px solid white;
+  width: 800px;
+  margin: 100px auto;
+}
+
+.header__container {
+  text-align: center;
+}
+
+.header__profile-picture {
+  background-image: url(../images/profile_pic_1.png);
+  width: 320px;
+  height: 270px;
+  margin: 30px auto;
+  border: 10px solid white;
+}
+
+.header__profile-picture:hover {
+  background-image: url(../images/profile_pic_2.png);
+  cursor: pointer;
+}
+
+.header__profile-name {
+  font-size: 80px;
+  padding: 20px 0;
+  color: white;
+}
+
+.header__profile-job {
+  color: white;
+  font-size: 40px;
+}
+
+.main__contents {
+  color: white;
+  padding: 30px 0 0 0;
+}
+
+.main__introduce-text {
+  padding: 10px 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.main__introduce-title {
+  padding: 20px 0 10px 0px;
+  font-size: 30px;
+  text-align: left;
+}
+
+.main__channels--title {
+  padding: 10px 0 10px 0px;
+  font-size: 30px;
+  text-align: left;
+}
+
+.main_introduce-list {
+  font-weight: bold;
+  padding-left: 10px;
+  list-style: none;
+  font-size: 16px;
+}
+
+.main__introduce--html,
+.main__introduce--js,
+.main__introduce--react {
+  padding: 0 0 10px 0px;
+  width: fit-content;
+}
+
+.main__introduce--html:hover a {
+  color: red;
+  font-weight: bold;
+}
+.main__introduce--js:hover a {
+  color: #fbe21b;
+  font-weight: bold;
+}
+
+.main__introduce--react:hover a {
+  color: #6bd8f7;
+}
+
+.main__channels {
+  padding-left: 10px;
+  font-weight: bold;
+}
+.main__github-icon,
+.main__blog-icon {
+  padding: 0 0 10px 0px;
+  width: fit-content;
+}
+
+.main__github-icon:hover a {
+  color: #2e2e2e;
+}
+
+.main__blog-icon:hover a {
+  color: #eb5a28;
+}
