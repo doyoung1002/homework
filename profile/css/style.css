@@ -18,7 +18,6 @@ a {
 
 .header__mode {
   font-weight: bold;
-  color: white;
   padding: 5px 0 5px 5px;
   text-align: left;
 }
@@ -41,6 +40,7 @@ body {
   border: 10px solid white;
   width: 800px;
   margin: 100px auto;
+  color: white;
 }
 
 .header__container {
@@ -52,7 +52,7 @@ body {
   width: 320px;
   height: 270px;
   margin: 30px auto;
-  border: 10px solid white;
+  border: 10px solid;
 }
 
 .header__profile-picture:hover {
@@ -63,11 +63,9 @@ body {
 .header__profile-name {
   font-size: 80px;
   padding: 20px 0;
-  color: white;
 }
 
 .header__profile-job {
-  color: white;
   font-size: 40px;
 }
 
@@ -137,4 +135,9 @@ body {
 
 .main__blog-icon:hover a {
   color: #eb5a28;
+}
+
+.footer__text {
+  padding: 20px 0 10px 0;
+  text-align: center;
 }
