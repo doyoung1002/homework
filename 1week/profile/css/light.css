@@ -17,6 +17,7 @@ a {
 }
 
 .header__mode {
+  width: fit-content;
   font-weight: bold;
   padding: 5px 0 5px 5px;
   text-align: left;
