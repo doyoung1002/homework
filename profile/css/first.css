@@ -1,0 +1,50 @@
+body,
+p,
+ul {
+  margin: initial;
+  padding: initial;
+}
+
+body {
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.main__container {
+  margin: 0 auto;
+  width: fit-content;
+  padding-top: 400px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.main__yes-btn,
+.main__no-btn {
+  margin: 50px;
+  border: 0;
+  background-color: black;
+  width: 200px;
+  height: 100px;
+  font-size: 50px;
+  transition: transform 0.3s, font-size 0.3s;
+}
+
+.main__yes-btn:hover {
+  cursor: pointer;
+  transform: scale(1.4);
+  transition: 0.1s;
+}
+
+.main__no-btn:hover {
+  cursor: pointer;
+  transform: scale(1.4);
+}
+
+.main__text {
+  font-size: 100px;
+}
