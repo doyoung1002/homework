@@ -1,0 +1,166 @@
+/* Resets */
+body,
+ol {
+  margin: unset;
+  padding: unset;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1,
+p {
+  margin: unset;
+  font-weight: unset;
+  font-size: unset;
+}
+
+/* Layouts */
+.l_wrapper {
+  width: 1304px;
+  margin: 100px auto;
+}
+
+/* Typography */
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Design */
+
+.wood-contents {
+  padding-top: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(images/header-bg.svg);
+}
+
+.wood-contents-text {
+  color: #ffa500;
+  margin: 0 auto;
+  width: 960px;
+  box-sizing: border-box;
+  border: 30px solid #ffa500;
+  border-bottom: 0;
+  background-image: url(images/container-bg.png);
+  background-repeat: no-repeat;
+  background-position: right 54px top 54px;
+  padding: 60px 368px 70px 60px;
+}
+
+.wood-contents-text .highlight {
+  font-weight: bold;
+}
+
+.wood-contents h1 {
+  font-size: 32px;
+  letter-spacing: 6.08px;
+}
+
+.wood-contents h1::after {
+  content: ' ';
+  width: 373px;
+  height: 4px;
+  display: inline-block;
+  margin-bottom: 26px;
+  background-color: #ffa500;
+  border-radius: 12px;
+}
+
+.wood-contents p {
+  line-height: 1.6;
+  text-align: left;
+}
+
+.wood-main_picture {
+  font-size: 0;
+  text-align: center;
+  width: auto;
+  background-color: #ddd;
+  padding: 30px 172px;
+}
+
+.wood-main_picture li {
+  width: 300px;
+  padding-left: 30px;
+  display: inline-block;
+}
+
+.wood-main_picture li:first-child {
+  padding-left: 0px;
+}
+
+.wood-main_picture div {
+  border-radius: 6px;
+  color: #ffa500;
+  overflow: hidden;
+}
+
+.wood-main_picture p {
+  background-image: url(images/play.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-color: white;
+  border-top: 4px solid #ffa500;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 3;
+  padding-left: 10px;
+}
+
+.wood-main_picture p:hover {
+  cursor: pointer;
+}
+
+.footer {
+  background-color: white;
+  border-top: 2px solid #aaa;
+  color: #aaa;
+  font-size: 14px;
+  letter-spacing: 4.06px;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.footer p {
+  font-weight: bold;
+  line-height: 1.6;
+  display: inline-block;
+}
+
+@media (max-width: 960px) {
+  .l_wrapper {
+    height: auto;
+    width: 100%;
+  }
+
+  .wood-contents-text {
+    height: auto;
+    width: 100%;
+    background-image: none;
+    padding-right: 60px;
+  }
+  .wood-contents h1 {
+    font-size: 24px;
+  }
+
+  .wood-main_picture {
+    padding: 0 100px 0 100px;
+    background-color: #fff;
+    width: 300px;
+    margin-right: 300px;
+  }
+
+  .wood-main_picture li {
+    padding: 0;
+  }
+
+  .wood-main_picture p {
+    font-size: 20px;
+  }
+  .wood-main_picture li {
+    padding-top: 20px;
+  }
+}

@@ -1,0 +1,60 @@
+/* CSS Resets */
+body,
+p {
+  /* 상속을 못받게 initial로 지정 */
+  margin: initial;
+  /* unset 브라우저가  initial inherit을 판단하게 함*/
+}
+
+h1 {
+  margin: initial;
+  /* font-size 는 부모요소를 상속 받게 할 수 있게 하는 inherit으로 설정 */
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* element style로 생긴 공백 콘텐츠와 사진 사이에 공백이 생기는데 방법이 2가지 있음 */
+
+/* 1번째  */
+/* img {
+  display: block;
+} */
+
+/* 2번째 */
+img {
+  vertical-align: top;
+}
+
+/* Design */
+/* 1. 처음 wrapper의 공간이 어느정도 차지하는지 봐야한다. */
+/* root요소 <html>, 최상위 요소를 뜻한다. */
+:root {
+  font-family: 'arial';
+}
+.wrapper {
+  box-shadow: inset 0 0 20px red;
+  width: 500px;
+  margin: 60px auto;
+}
+
+.animal-cover {
+  display: block;
+  margin: 0 auto;
+}
+
+.animal-contents {
+  background-image: url(images/green.png);
+  background-repeat: repeat-x;
+  background-color: #9c6035;
+  color: #e8bc9c;
+  padding: 60px 20px 48px;
+  border-radius: 0 0 30px 30px;
+  border-bottom: 10px solid #46260e;
+}
+
+.animal-contents h1 {
+  font-size: 36px;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,60 @@
+/* CSS Reset 유저 에이전트 기본설정 초기화 */
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Universal Sector */
+/* 실수할 가능성이 높음, 너무 광범위한 선택을 초기화 */
+* {
+  margin: 0;
+}
+
+/* Design */
+body {
+  background-color: #999;
+}
+
+article {
+  background-color: white;
+  width: 500px;
+  margin: 100px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  /* border-box : width값에 border, padding을 포함하여 계산 */
+  /* content-box : 콘텐츠 사이즈만 (기본값) */
+
+  text-align: center;
+
+  border-radius: 20px 20px 0 0;
+
+  /* border 스타일 */
+  /* 두께 */
+  /* border-width: 50px; */
+  /* 스타일 4가지 방향으로도 가능*/
+  /* border-style: solid; */
+  /* 색상 4가지 방향으로 색상 변경 가능*/
+  /* border-color: brown; */
+
+  /* 단축 속성으로도 가능 */
+  border: 30px solid purple;
+}
+
+h1 {
+  color: brown;
+  font-size: 40px;
+  border-bottom: 10px solid purple;
+
+  /* block요소로 컨테이닝 블록을 모두다 쓸 수 있으며, article가 부모요소 */
+  display: block;
+  width: auto;
+}
+
+p {
+  background-color: #ddd;
+  padding: 40px;
+  border: 1px solid #999;
+  color: #888;
+}

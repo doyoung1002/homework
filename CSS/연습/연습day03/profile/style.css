@@ -1,0 +1,33 @@
+body,
+p,
+h1,
+h2 {
+  margin: inherit;
+  padding: inherit;
+}
+
+.bg {
+  background-image: url(./images/background.png);
+}
+
+.wrapper {
+  background-image: url("./images/cover02.png");
+  width: 800px;
+  margin: 100px auto;
+}
+
+.name {
+  color: white;
+  text-align: center;
+}
+
+.produce {
+  color: white;
+  text-align: center;
+  border-top: 10px solid;
+  width: fit-content;
+}
+
+.contents {
+  background-color: wheat;
+}

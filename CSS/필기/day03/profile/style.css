@@ -1,0 +1,142 @@
+/* CSS Resets */
+body,
+p,
+ul {
+  margin: initial;
+  padding: initial;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* font-size가 아무런 설정을 안했을 때 기본값 16px로 설정되어있다.  */
+h1,
+h2 {
+  margin: initial;
+  /* 상속이 지원이 안되는 것은 initial  */
+  /* font-size: inherit 을 하는 경우는 기본값이 있어서 상속을 못받게 해서 다른 값을 설정을 못해준다. 근데 inherit으로 상속을 강제하게 한다.. */
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Design */
+body {
+  background-image: url(images/background.gif);
+}
+
+.wrapper {
+  background-color: #ddd;
+  /* width: auto -> 브라우저가 자동으로 계산해주는 값 */
+  width: 800px;
+  /* height: auto; -> height는 특수케이스가 아닌 이상 지정하지 않는 것이 좋다. */
+  margin: 60px auto;
+}
+
+/* *.header {} .header는 앞에 *(전체선택자)가 생략되어있다.*/
+
+.header {
+  /* 반복 기본값은 no-repeat */
+  /* background-repeat: repeat; / repeat-x, repeat-y */
+  /* background-position: center */
+  /* background-size: 200px 100px; 가로, 세로/ 퍼센트도 가능*/
+  /* background-size: cover 가 있음, 백그라운드 사이즈를 조절해주는데, 이미지 비율을 유지가 되면서 사이즈가 조절이 됨. 근데 이미지 누락이 될수도 있음 */
+  background-size: cover;
+  background-image: url(images/cover04.png);
+  text-align: center;
+  padding: 100px 0;
+  color: white;
+
+  height: auto;
+  min-height: 400px;
+  padding: 60px 0;
+  box-sizing: border-box;
+
+  /* img의 margin-top 기법 말고, 부모 관점에서 위아래 패딩 이용 */
+  /* 이미지에 margin-top을 주게된다면 사이즈 변경을 할때 한정적으로 변경이 되므로 min-height 라는 속성은 400px을 넘었을 때 자동으로 늘리게끔하는 것이다. 여기에 우리는 이 사진을 중앙으로 이동을 시켜야하는데 내부 컨텐츠를 이동 시키는거 이기에 padding이라는 값을 주고, box-sizing: border-box를 주어 패딩을 컨텐츠 크기에 포함을 시킨다.*/
+  /* height: auto; */
+  /* min-height: 400px; */
+  /* padding: 40px; */
+  /* box-sizing: border-box; */
+}
+
+header img.profile {
+  /* margin-top: 70px; */
+  border: 6px solid white;
+  border-radius: 50%;
+  width: 140px;
+}
+
+/* .header h1은 header 소속의 h1 만 호출로 구체성, 안정성이 확보가 된다. */
+/* header와 h1의 중간에 (공백)은 combinator라고 하는데 결합자 연산자라고 한다. 그래서 .header와 h1을 결합시킨다. */
+/* Descendant Combinator : 하위를 나타내는 결합자 */
+/* 하위 셀렉터 descendant selector */
+.header h1 {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.header p {
+  border-top: 8px solid;
+  /* width : max content */
+  width: fit-content;
+  margin: 4px auto;
+  padding: 4px 20px;
+}
+
+/* .contents {
+  background-color: #999;
+} */
+
+.section {
+  /* box-shadow는 내부 그림자를 넣는것이다. */
+  /* box-shadow: inset 0 0 20px red; */
+  background-color: white;
+  /* margin 병합은 css 개발자가 의도한 것 무조건 일어나는 것이 아닌, 조건이 되야 나타난다.*/
+  /* 블럭 레벨 element 위 아래에 있을 경우 겹치게 된다. */
+  margin: 20px;
+  padding: 20px;
+
+  background-repeat: no-repeat;
+  background-position: right 40px center;
+}
+
+/* 중요한 이미지의 경우는 마크업 img src로 넣는다 */
+/* 데코의 경우는 css, 백그라운드 이미지로 넣는다. */
+/* 하지만 유지보수에 따라 달라질수도 있긴하다. */
+
+.section.information {
+  background-image: url(images/icon-information.png);
+}
+
+.section.skill {
+  background-image: url(images/icon-skills.png);
+}
+
+.section h2 {
+  font-size: 32px;
+  color: deeppink;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+/* .section li 보다는 .list li로 하는 것이 유지보수성에 더 용이하다 */
+.list li {
+  padding: 4px 10px;
+  border-left: 5px solid #ddd;
+  transition: all 0.4s;
+}
+
+/* Pseudo class(가상 클래스) : 브라우저가 특정 상황에서 가상의 class를 만들어줌 */
+
+.list li:hover {
+  border-color: deeppink;
+  color: deeppink;
+  font-size: 20px;
+}
+
+.footer {
+  background-color: #f4f4f4;
+  padding: 12px 0;
+  text-align: center;
+  color: #999;
+}
